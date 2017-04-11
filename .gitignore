@@ -9,6 +9,7 @@
 !*.cpp
 !*.c
 !*.h
+!*.cc
 !Makefile
 !.gitignore
 
