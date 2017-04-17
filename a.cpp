@@ -15,7 +15,8 @@ int main(){
 	cout << u2 - u1 << endl;
 	u1 = 1;
 	u2 = -1;
-	int i = -1;
+	int i = -1;	
 	cout << u1 * i << endl;
 	return 0;
+	
 }
