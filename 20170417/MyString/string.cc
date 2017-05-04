@@ -6,11 +6,10 @@
 #include "String.h"
 
 String::String()
-:_pstr(new char[1]){
+:_pstr(new char[1]()){
 	cout << "String::String()" << endl;
-	_pstr[0] = '\0';
+//	_pstr[0] = '\0';
 }
-
 
 String::String(const char *pstr)
 :_pstr(new char[strlen(pstr) + 1]){
@@ -243,9 +242,9 @@ void test4(){
 	*/
 	String s4 = s1 + s2 + s3;
 	cout << s4 << endl;
-	cout << "s1:----->" << s1 << s1.size() << endl;
-	cout << "s2:----->" << s2 << s2.size() << endl;
-	cout << "s3:----->" << s3 << s3.size() << endl;
+//	cout << "s1:----->" << s1 << s1.size() << endl;
+//	cout << "s2:----->" << s2 << s2.size() << endl;
+//	cout << "s3:----->" << s3 << s3.size() << endl;
 	String s5 = s1 + s2 + s3;
 	cout << s5 << endl;
 	cout << s1 + s2 + s3 << endl;
@@ -276,7 +275,7 @@ void test7(){
 	cout << s1 << endl;
 }
 int main(void){
-	test7();
+	test4();
 	return 0;
 }
 
